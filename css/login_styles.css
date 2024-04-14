@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+:root{
+    --main-color:#20bf6b;;
+} 
+
+
+body {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-image: url(bg6.webp);
+	overflow: hidden;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.hero{
+	padding-top: 100px;
+}
+
+
+.header{
+    position: absolute;
+	width: 100%;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem ;
+}
+
+.header .logo{
+    font-weight: bolder;
+    color:#fff;
+    font-size: 2.5rem;
+	padding-left: 50px;
+	text-decoration: none;
+}
+
+.submit-btn a{
+    text-decoration: none !important;
+    color: black;
+}
+
+.header .logo span{
+    color:var(--main-color);
+	font-size: 1rem;
+}
+.navbar{
+	width: 35%;
+
+}
+
+/* .header .navbar {
+    display: flex;
+	align-items: end;
+} */
+.header .navbar a{
+    font-size: 1.rem;
+    color:#fff;
+    margin-left: 2rem;
+	text-decoration: none;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+}
+
+/* ------------------------------------------------------------ */
+
+
+.hero {
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+	background-position: center;
+	position: absolute;
+}
+.form-box {
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 6% auto;
+	background: #FFF;
+	padding: 5px;
+	overflow: hidden;
+	
+}
+.button-box {
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #adf4ce;
+	border-radius: 30px;
+}
+.toggle-btn {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+#btn {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background-color: #20bf6b ;
+	border-radius: 30px;
+	transition: .5s;
+}
+.soical-icons {
+	margin: 30px auto;
+	text-align: center;
+}
+.soical-icons .fa {
+	font-size: 40px;
+	color: #20bf6b;
+	margin: 0 12px;
+	cursor: pointer;
+}
+.input-group {
+	top: 180px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+.input-field {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+.check-box {
+	margin: 30px 10px 30px 0;
+}
+.submit-btn {
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin:  auto;
+	background-color: #20bf6b ;
+	border-radius: 30px;
+}
+span {
+	color: #777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+	
+}
+#login {
+	left: 50px;
+}
+#register {
+	left: 450px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login & Registration Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/login_styles.css">
+</head>
+<body>
+
+	<header class="header">
+		<a href="#" class="logo"><span>Project</span>Manager</a>
+
+		<nav class="navbar">
+			<a href="#home">Home</a>
+			<a href="#about">About</a>
+			<a href="#gallery">Hackathons</a>
+			<a href="#gallery2">Project</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+
+
+
+	<div class="hero">
+		
+			<div class="form-box">
+				<div class="button-box">
+					<div id="btn"></div>
+					<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+					<button type="button" class="toggle-btn" onclick="register()">Register</button>
+				</div>
+			
+				<div class="soical-icons">
+					<a href="#"><i class="fa fa-facebook-square  fa-6"></i></a>
+					<a href="#"><i class="fa fa-google-plus-square fa-6"></i></a>
+					<a href="#"><i class="fa fa-twitter-square fa-6"></i></a>
+				</div>
+	
+				<form id="login" class="input-group">
+					<input type="text" class="input-field" placeholder="User Id" required />
+					<input type="password" class="input-field" placeholder="Enter Password" required />
+					<input type="checkbox" class="check-box" /><span>Remember Password</span>
+					<button type="submit" class="submit-btn"><a href="index.html">Log In</a></button>
+				</form>
+	
+				<form id="register" class="input-group">
+					<input type="text" class="input-field" placeholder="User Id" required />
+					<input type="email" class="input-field" placeholder="Enter Email" required />
+					<input type="text" class="input-field" placeholder="Enter Password" required />
+					<input type="checkbox" class="check-box" /><span>I agree to the terms & conditions</span>
+					<button type="submit" class="submit-btn"><a href="index.html">Register</a></button>
+				</form>
+			</div>
+		
+	</div>
+
+
+	
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+
+		function register() {
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+
+		function login() {
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0";
+		}
+
+		// Get references to the login and register forms
+var loginForm = document.getElementById("login");
+var registerForm = document.getElementById("register");
+
+// Function to validate user id (text characters only)
+function isValidUserId(userId) {
+    var regex = /^[a-zA-Z]+$/;
+    return regex.test(userId);
+}
+
+// Function to validate login form
+function validateLoginForm() {
+    var userId = loginForm.querySelector('input[type="text"]').value;
+    var password = loginForm.querySelector('input[type="password"]').value;
+
+    // Check if userId and password are not empty
+    if (userId.trim() === "" || password.trim() === "") {
+        alert("Please enter both User Id and Password.");
+        return false;
+    }
+    return true;
+}
+
+// Function to validate register form
+function validateRegisterForm() {
+    var userId = registerForm.querySelector('input[type="text"]').value;
+    var email = registerForm.querySelector('input[type="email"]').value;
+    var password = registerForm.querySelector('input[type="password"]').value;
+    var agreeCheckbox = registerForm.querySelector('.check-box');
+
+    // Check if userId contains only text characters
+    if (!isValidUserId(userId)) {
+        alert("User Id should contain only text characters.");
+        return false;
+    }
+
+    // Check if userId, email, password are not empty and user agrees to terms
+    if (userId.trim() === "" || email.trim() === "" || password.trim() === "") {
+        alert("Please fill out all fields.");
+        return false;
+    }
+    if (!agreeCheckbox.checked) {
+        alert("Please agree to the terms & conditions.");
+        return false;
+    }
+    return true;
+}
+
+// Event listener for login form submission
+loginForm.addEventListener("submit", function(event) {
+    if (!validateLoginForm()) {
+        event.preventDefault();
+    }
+});
+
+// Event listener for register form submission
+registerForm.addEventListener("submit", function(event) {
+    if (!validateRegisterForm()) {
+        event.preventDefault();
+    }
+});
+
+
+	</script>
+</body>
+</html>
