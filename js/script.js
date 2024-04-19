@@ -16,7 +16,7 @@ collab1.addEventListener("click", (e)=>{
 
 const collab2= document.querySelector("#abc2");
 collab2.addEventListener("click", (e)=>{
-  alert("You have sucessfully collabed. We will send verification Email shortly!")
+  alert("You haver successfully collabbed. We will reach out to your email shortly!")
   e.preventDefault();
 })
 
@@ -95,6 +95,104 @@ collab14.addEventListener("click", (e)=>{
 const collab15= document.querySelector("#xyz7");
 collab15.addEventListener("click", (e)=>{
   alert("You have sucessfully collabed. We will send verification Email shortly!")
+  e.preventDefault();
+})
+
+
+
+const collabq= document.querySelector("#qwe0");
+collabq.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabq1= document.querySelector("#qwe1");
+collabq1.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabq2= document.querySelector("#qwe2");
+collabq2.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabq3= document.querySelector("#qwe3");
+collabq3.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabq4= document.querySelector("#qwe4");
+collabq4.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabq5= document.querySelector("#qwe5");
+collabq5.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabq6= document.querySelector("#qwe6");
+collabq6.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabq7= document.querySelector("#qwe7");
+collabq7.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabr0= document.querySelector("#rty0");
+collabr0.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabr1= document.querySelector("#rty1");
+collabr1.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabr2= document.querySelector("#rty2");
+collabr2.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabr3= document.querySelector("#rty3");
+collabr3.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabr4= document.querySelector("#rty4");
+collabr4.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabr5= document.querySelector("#rty5");
+collabr5.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabr6= document.querySelector("#rty6");
+collabr6.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
+  e.preventDefault();
+})
+
+const collabr7= document.querySelector("#rty7");
+collabr7.addEventListener("click", (e)=>{
+  alert("You have sucessfully added it to favourites!")
   e.preventDefault();
 })
 

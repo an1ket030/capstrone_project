@@ -9,7 +9,7 @@
 <body>
 
 	<header class="header">
-		<a href="#" class="logo"><span>Project</span>Manager</a>
+		<a href="#" class="logo"><span>Collab</span>Manager</a>
 
 		<nav class="navbar">
 			<a href="#home">Home</a>
@@ -38,23 +38,15 @@
 					<a href="#"><i class="fa fa-twitter-square fa-6"></i></a>
 				</div>
 	
-				<form id="login" class="input-group">
+				<form id="login" class="input-group" name="contactForm" onsubmit="return validateForm()">
 					<input type="text" class="input-field" placeholder="User Id" required />
 					<input type="password" class="input-field" placeholder="Enter Password" required />
 					<input type="text" class="input-field" placeholder="Enter Team Name" required />
 					<input type="text" class="input-field" placeholder="Enter Description" required />
 					<input type="checkbox" class="check-box" />Hackathon
 					<input type="checkbox" class="check-box" />Project
-					<button type="submit" id="ac" onclick="alert('hlkd')" class="submit-btn"><a href="index.html">Create Team</a></button>
+					<button type="submit" id="ac" onclick="alert('You have successfully created a team!')" class="submit-btn"><a href="index.html">Create Team</a></button>
 				</form>
-	
-				<!-- <form id="register" class="input-group">
-					<input type="text" class="input-field" placeholder="User Id" required />
-					<input type="email" class="input-field" placeholder="Enter Email" required />
-					<input type="text" class="input-field" placeholder="Enter Password" required />
-					<input type="checkbox" class="check-box" /><span>I agree to the terms & conditions</span>
-					<button type="submit" class="submit-btn"><a href="index.html">Register</a></button>
-				</form> -->
 			</div>
 		
 	</div>
@@ -78,9 +70,8 @@
 			z.style.left = "0";
 		}
 
-		// Get references to the login and register forms
+	
 var loginForm = document.getElementById("login");
-var registerForm = document.getElementById("register");
 
 // Function to validate user id (text characters only)
 function isValidUserId(userId) {
@@ -101,18 +92,7 @@ function validateLoginForm() {
     return true;
 }
 
-// Function to validate register form
-function validateRegisterForm() {
-    var userId = registerForm.querySelector('input[type="text"]').value;
-    var email = registerForm.querySelector('input[type="email"]').value;
-    var password = registerForm.querySelector('input[type="password"]').value;
-    var agreeCheckbox = registerForm.querySelector('.check-box');
 
-    // Check if userId contains only text characters
-    if (!isValidUserId(userId)) {
-        alert("User Id should contain only text characters.");
-        return false;
-    }
 
     // Check if userId, email, password are not empty and user agrees to terms
     if (userId.trim() === "" || email.trim() === "" || password.trim() === "") {
